@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The AlgoRhythms Band TM — Bill Austin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #120c08;
+      --panel: rgba(22, 14, 10, 0.78);
+      --ink: #f6ead4;
+      --muted: #cbb89a;
+      --gold: #e2b340;
+      --gold-2: #f0d27a;
+      --red: #c43c2c;
+      --line: rgba(226, 179, 64, 0.28);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Outfit", system-ui, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(ellipse at 20% 0%, rgba(196, 60, 44, 0.18), transparent 45%),
+        #120c08;
+    }
+    a { color: var(--gold-2); text-decoration: underline; text-underline-offset: 3px; }
+    a.btn { text-decoration: none; }
+    .page { width: min(980px, calc(100% - 1.4rem)); margin: 0 auto; padding: 1rem 0 2.4rem; }
+    .hero {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      overflow: hidden;
+    }
+    .hero img {
+      display: block;
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      object-position: center 18%;
+    }
+    .hero-copy { padding: 1.1rem 1.25rem 1.25rem; }
+    h1 {
+      font-family: "Fraunces", Georgia, serif;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      line-height: 1.05;
+      font-weight: 600;
+      margin-bottom: 0.55rem;
+    }
+    .tm { font-family: "Outfit", sans-serif; font-size: 0.55em; font-weight: 600; letter-spacing: 0.04em; vertical-align: super; }
+    .lead { color: var(--muted); font-size: 1.02rem; max-width: 40rem; }
+    .projects {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 1.2rem 1.25rem 1.3rem;
+    }
+    .card h2 {
+      font-family: "Fraunces", Georgia, serif;
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin: 0.1rem 0 0.4rem;
+    }
+    .card p { color: var(--muted); }
+    .label {
+      font-size: 0.72rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+    .actions { margin-top: 0.9rem; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.72rem 1.05rem;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      background: var(--red);
+      color: #fff8ee;
+    }
+    footer {
+      margin-top: 1.2rem;
+      color: #9a8768;
+      font-size: 0.88rem;
+    }
+    @media (max-width: 800px) {
+      .projects { grid-template-columns: 1fr; }
+      .hero img { height: 220px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <section class="hero">
+      <img src="bar-room.jpg" alt="Bill Austin caricature on a bar-room stage with a red bass" />
+      <div class="hero-copy">
+        <h1>The AlgoRhythms Band <span class="tm">TM</span></h1>
+        <p class="lead">
+          <a href="https://www.facebook.com/Bill.Austin.Musician/" target="_blank" rel="noopener">Bill Austin</a>,
+          creator of
+          <a href="https://www.youtube.com/@BobAndSallyOutOfToon" target="_blank" rel="noopener">Bob and Sally</a>
+          Out of Toon on YouTube, and director of The AlgoRhythms Band TM —
+          a unique AI band combined with human musicians.
+        </p>
+      </div>
+    </section>
+
+    <section class="projects">
+      <article class="card">
+        <div class="label">YouTube</div>
+        <h2>Bob &amp; Sally Out of Toon</h2>
+        <p>Watch Bob and Sally's First Episode.</p>
+        <div class="actions">
+          <a class="btn" href="https://www.youtube.com/watch?v=8izjgtyuuEo" target="_blank" rel="noopener">Watch the first episode</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="label">The Band</div>
+        <h2>The Algorhythms Band TM</h2>
+        <p>AI and human musicians in the same room. Directed by Bill Austin.</p>
+      </article>
+    </section>
+
+    <footer>Bill Austin</footer>
+  </div>
+  <script type="text/javascript">function loadAcDiv(t){let e;(e=t.createElement("div")).id="embed-ab",e.async=!0,e.setAttribute("data-ab-id","8wa5rywM"),e.setAttribute("data-btn-bg","rgba(223,170,170,1)"),e.setAttribute("data-btn-img","https://myagencycoach.agency/storage/uploads/2730/img_1709045436_MoZ.png"),e.setAttribute('data-avtr-img',"https://myagencycoach.agency/storage/uploads/2730/img_1715105813_s1r.jpg"),e.setAttribute("data-ab-url","https://myagencycoach.agency"),e.setAttribute("data-bub-ani","anim-ok"),e.setAttribute("data-wid-pos","fcpw-right"),t.body.appendChild(e)}function initialize(t){let e;(e=t.createElement("script")).id="script-ab",e.async=!0,(e.type = "text/javascript"),e.src="https://myagencycoach.agency/assets/chat/embed.js",e.onload=loadAcDiv(t),t.body.appendChild(e)}window.addEventListener?window.addEventListener("load",initialize(document),!1):window.attachEvent("load",initialize(document),!1);</script>
+</body>
+</html>
